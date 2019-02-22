@@ -41,20 +41,29 @@
             android:text="Frag Two" />
 
         <android.support.design.button.MaterialButton
-            android:id="@+id/btn_backstack_transaction"
+            android:id="@+id/btn_frag_two_backstack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/btn_show_frag_one"
+            android:layout_alignLeft="@id/btn_show_frag_one"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="F2 Backstack" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/btn_frag_one_transition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_show_frag_one"
+            android:layout_toRightOf="@id/btn_frag_two_backstack"
             android:layout_marginLeft="@dimen/margin_medium_2"
             android:layout_marginTop="@dimen/margin_medium_2"
-            android:layout_toRightOf="@id/btn_show_frag_two"
-            android:text="F2 Backstack"
-            />
+            android:text="F1 Transition" />
 
         <FrameLayout
             android:id="@+id/fl_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/btn_show_frag_one"
+            android:layout_below="@id/btn_frag_two_backstack"
             android:layout_marginTop="@dimen/margin_medium_2"
             android:background="@android:color/holo_orange_light" />
 

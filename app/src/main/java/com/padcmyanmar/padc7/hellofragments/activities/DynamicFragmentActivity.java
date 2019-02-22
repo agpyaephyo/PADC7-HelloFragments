@@ -33,11 +33,19 @@ public class DynamicFragmentActivity extends AppCompatActivity {
             }
         });
 
-        Button btnFragmentThree = findViewById(R.id.btn_backstack_transaction);
+        Button btnFragmentThree = findViewById(R.id.btn_frag_two_backstack);
         btnFragmentThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showFragmentTwoWithTransaction();
+                showFragmentTwoWithBackstack();
+            }
+        });
+
+        Button btnFragmentOneWithTransition = findViewById(R.id.btn_frag_one_transition);
+        btnFragmentOneWithTransition.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFragmentOneWithTransaction();
             }
         });
     }
@@ -54,9 +62,17 @@ public class DynamicFragmentActivity extends AppCompatActivity {
                 .commit();
     }
 
-    private void showFragmentTwoWithTransaction() {
+    private void showFragmentTwoWithBackstack() {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fl_container, TwoFragment.newInstance())
+                .addToBackStack(null)
+                .commit();
+    }
+    
+    private void showFragmentOneWithTransaction() {
+        getSupportFragmentManager().beginTransaction()
+                .setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit)
+                .replace(R.id.fl_container, OneFragment.newInstance())
                 .addToBackStack(null)
                 .commit();
     }
