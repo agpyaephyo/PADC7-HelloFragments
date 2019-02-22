@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_medium_2">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_material_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_material_button" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_material_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:text="@string/lbl_material_button"
+                app:icon="@drawable/ic_android_black_24dp"
+                app:rippleColor="@android:color/holo_blue_bright" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_material_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:text="@string/lbl_material_button"
+                app:backgroundTint="@android:color/holo_green_light"
+                app:icon="@drawable/ic_android_black_24dp"
+                app:rippleColor="@android:color/black" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_material_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:text="@string/lbl_material_button"
+                app:strokeColor="@android:color/black"
+                app:strokeWidth="@dimen/margin_small" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/btn_material_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:text="@string/lbl_material_button"
+                app:cornerRadius="@dimen/margin_medium" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_medium_2">
+
+            <android.support.design.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Chip" />
+
+            <android.support.design.chip.Chip
+                android:id="@+id/chp_checkable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:checkable="true"
+                android:text="Checkable Chip" />
+
+            <android.support.design.chip.Chip
+                android:id="@+id/chp_with_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:text="Chip with Icon"
+                app:chipIcon="@drawable/ic_android_black_24dp" />
+
+            <android.support.design.chip.Chip
+                android:id="@+id/chp_with_checked_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2"
+                android:checkable="true"
+                android:text="Chip with Checked Icon"
+                app:checkedIcon="@drawable/ic_close_black_24dp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <android.support.design.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium"
+        app:chipSpacing="@dimen/margin_medium"
+        app:singleLine="true">
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="This" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="is" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="a" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="group" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="of" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="chips" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="contained" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="within" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="a" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="chip" />
+
+        <android.support.design.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkable="true"
+            android:text="group" />
+
+    </android.support.design.chip.ChipGroup>
+
+    <android.support.design.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium_2"
+        app:cardUseCompatPadding="true"
+        app:strokeColor="@color/accent"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="Text in Material Card View" />
+
+    </android.support.design.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_medium_2"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_small"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@android:color/holo_blue_bright">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Flying Hint"
+                android:inputType="textPassword" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_another_flying_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_small"
+            app:counterEnabled="true"
+            app:counterMaxLength="16"
+            app:counterOverflowTextAppearance="@style/CounterOverFlow"
+            app:counterTextAppearance="@style/CounterText"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/ErrorText"
+            app:hintTextAppearance="@style/HintText">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_another_flying_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Another Flying Hint" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

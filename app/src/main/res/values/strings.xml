@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">PADC7-HelloFragments</string>
     <string name="action_settings">Settings</string>
+
+    <string name="fruit_banana">Banana</string>
+    <string name="fruit_apple">Apple</string>
+    <string name="fruit_orange">Orange</string>
+
+    <string name="btn_check_fruit"><u>Check Fruit</u></string>
+
+    <string name="gender_male">Gentleman</string>
+    <string name="gender_female">Lady</string>
+
+    <string name="lbl_return">Return</string>
+
+    <string name="lbl_material_button">Material Button</string>
 </resources>

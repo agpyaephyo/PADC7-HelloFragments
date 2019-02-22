@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_my_greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Manually Creating Activity"
+        android:textColor="#FF0000"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/iv_my_greetings"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/tv_my_greetings"
+        android:src="@drawable/holadios" />
+
+
+    <Button
+        android:id="@+id/btn_chinese_greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_my_greetings"
+        android:layout_alignRight="@id/iv_my_greetings"
+        android:layout_margin="16dp"
+        android:padding="20dp"
+        android:text="Chinese Greetings" />
+
+
+    <Button
+        android:id="@+id/btn_random_greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_chinese_greetings"
+        android:layout_toLeftOf="@id/btn_chinese_greetings"
+        android:padding="20dp"
+        android:text="Random" />
+
+
+    <EditText
+        android:id="@+id/et_my_greetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_my_greetings"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toLeftOf="@+id/btn_say_hi"
+        android:hint="Say Hi"
+        android:inputType="text" />
+
+    <ImageButton
+        android:id="@+id/btn_say_hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/et_my_greetings"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_feedback_black_24dp" />
+
+
+    <CheckBox
+        android:id="@+id/cb_banana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_my_greetings"
+        android:layout_marginStart="@dimen/margin_card_medium_2"
+        android:layout_marginBottom="@dimen/margin_card_medium_2"
+        android:checked="true"
+        android:text="@string/fruit_banana" />
+
+    <CheckBox
+        android:id="@+id/cb_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_my_greetings"
+        android:layout_marginLeft="@dimen/margin_card_medium_2"
+        android:layout_marginBottom="@dimen/margin_card_medium_2"
+        android:layout_toEndOf="@id/cb_banana"
+        android:text="@string/fruit_apple" />
+
+    <CheckBox
+        android:id="@+id/cb_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/et_my_greetings"
+        android:layout_marginLeft="@dimen/margin_card_medium_2"
+        android:layout_marginBottom="@dimen/margin_card_medium_2"
+        android:layout_toEndOf="@id/cb_apple"
+        android:text="@string/fruit_orange" />
+
+    <TextView
+        android:id="@+id/btn_check_fruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cb_orange"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_medium_2"
+        android:clickable="true"
+        android:foreground="@drawable/bg_ripple_primary"
+        android:padding="@dimen/margin_medium"
+        android:text="@string/btn_check_fruit"
+        android:textColor="@color/primary"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/rg_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_check_fruits"
+        android:layout_marginLeft="@dimen/margin_card_medium_2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_gentleman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/gender_male" />
+
+        <RadioButton
+            android:id="@+id/rb_lady"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_female" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_text_to_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rg_gender"
+        android:layout_margin="@dimen/margin_medium_2" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_return"
+        android:layout_toEndOf="@id/tv_text_to_display"
+        android:layout_alignBottom="@id/tv_text_to_display"
+        />
+
+</RelativeLayout>
