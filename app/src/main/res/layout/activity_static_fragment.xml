@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StaticFragmentActivity">
+    tools:context=".activities.StaticFragmentActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -29,7 +29,8 @@
             android:id="@+id/frag_one"
             android:name="com.padcmyanmar.padc7.hellofragments.fragments.OneFragment"
             android:layout_width="320dp"
-            android:layout_height="400dp" />
+            android:layout_height="400dp"
+            />
 
         <fragment
             android:id="@+id/frag_two"
