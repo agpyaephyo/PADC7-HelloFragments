@@ -52,7 +52,7 @@ public class DynamicFragmentActivity extends AppCompatActivity {
 
     private void showFragmentOne() {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fl_container, OneFragment.newInstance())
+                .replace(R.id.fl_container, OneFragment.newInstance("showFragmentOne"))
                 .commit();
     }
 
@@ -72,7 +72,7 @@ public class DynamicFragmentActivity extends AppCompatActivity {
     private void showFragmentOneWithTransaction() {
         getSupportFragmentManager().beginTransaction()
                 .setCustomAnimations(R.anim.enter, R.anim.exit, R.anim.pop_enter, R.anim.pop_exit)
-                .replace(R.id.fl_container, OneFragment.newInstance())
+                .replace(R.id.fl_container, OneFragment.newInstance("showFragmentOneWithTransaction"))
                 .addToBackStack(null)
                 .commit();
     }
